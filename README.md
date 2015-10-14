@@ -20,6 +20,6 @@ $ exec $SHELL
 
 ```
 $ cd ~
-$ git clone git@github.com:shyazusa/dotfile.git
+$ git clone https://github.com/shyazusa/dotfile.git
 $ cp dotfile/.* .
 ```
