@@ -1,6 +1,7 @@
 dotfile
 ===
 
+* .bashrc
 * .vimrc
 * .zpreztorc
 * .zprofile
