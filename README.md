@@ -6,6 +6,7 @@ dotfile
 * .zpreztorc
 * .zprofile
 * .zshrc
+* .gitmessage.txt
 
 ```
 $ yum install zsh
@@ -23,4 +24,5 @@ $ exec $SHELL
 $ cd ~
 $ git clone https://github.com/shyazusa/dotfile.git
 $ cp dotfile/.* .
+$ git config --global commit.template ~/.gitmessage.txt
 ```
