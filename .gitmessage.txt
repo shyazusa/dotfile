@@ -19,7 +19,13 @@
 # - Remove unused A (不必要なAを除去)
 # - Use A instead of B (Bの代わりにAを用いる)
 # - Change A to B (AをBに変更)
+# - A in B out (Bの変わりにAを導入)
 # - Address an issue with A (Aの問題を解決)
+# 特殊)
+# - resurrect (蘇えらせる)
+# - kick out (好ましくないものを取り除く)
+# - R.I.P. (安らかに眠れ ～Removeでは語りきれない思いがあるとき～)
+# - cosmetic change (インデントを美しくした時など)
 # 
 # 前置詞)
 # - with P (Pと一緒に、伴って)
