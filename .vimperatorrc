@@ -1,0 +1,15 @@
+set titlestrig=Firefox
+set noerrorbells
+set visualbell
+set hlsearch
+set focuscontent
+set hintchars=ifjklasdhguonmerwc
+
+beep off
+
+map h <C-PageUp>
+map l <C-PageDown>
+map H <Left>
+map L <Right>
+noremap j 5<C-e>
+noremap k 5<C-y>
