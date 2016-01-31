@@ -3,6 +3,7 @@ dotfile
 
 * .bashrc
 * .vimrc
+* .vimperatorrc
 * .zpreztorc
 * .zprofile
 * .zshrc
