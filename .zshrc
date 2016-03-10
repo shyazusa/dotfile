@@ -23,6 +23,7 @@ setopt nolistbeep
 alias gls="gls --color"
 alias where="command -v"
 alias j="jobs -l"
+alias ls='LC_COLLATE=C /usr/local/bin/gls --group-directories-first'
 alias la="ls -a"
 alias lf="ls -F"
 alias ll="ls -l"
