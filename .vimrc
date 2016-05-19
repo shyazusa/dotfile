@@ -305,15 +305,6 @@ au BufRead,BufNewFile *.{txt,text,md} set filetype=markdown
 autocmd FileType coffee setlocal sw=2 sts=2 ts=2 et
 au BufRead,BufNewFile,BufReadPre *.coffee set filetype=coffee
 "autocmd BufWritePost *.coffee silent CoffeeMake! -cb | cwindow | redraw!
-function! JasmineSetting()
-    au BufRead,BufNewFile *Helper.js,*Spec.js set filetype=jasmine.javaScript
-    au BufRead,BufNewFile *Helper.coffee,*Spec.coffee set filetype=jasmine.coffee
-    au BufRead,BufNewFile,BufReadPre *Helper.coffee,*Spec.coffee let b:quickrun_config = {'type' : 'coffee'}
-    call jasmine#load_snippets()
-    map <buffer> <leader>m :JasmineRedGreen<CR>
-    command! JasmineRedGreen :call jasmine#redgreen()
-    command! JasmineMake :call jasmine#make()
-endfunction
 let g:indent_guides_start_level=2
 let g:indent_guides_auto_colors=0
 let g:indent_guides_enable_on_vim_startup=0
