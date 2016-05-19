@@ -1,12 +1,9 @@
-set titlestrig=Firefox
+set titlestring=Firefox
 set noerrorbells
 set visualbell
 set hlsearch
 set focuscontent
 set hintchars=ifjklasdhguonmerwc
-
-beep off
-
 map h <C-PageUp>
 map l <C-PageDown>
 map H <Left>
