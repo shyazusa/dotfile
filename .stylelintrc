@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "string-quotes": "single",
+    "function-url-quotes": "none",
+    "declaration-block-trailing-semicolon": "always",
+    "number-zero-length-no-unit": true,
+    "no-eol-whitespace": true
+  }
+}
