@@ -9,6 +9,7 @@ dotfile
 * .zshrc
 * .gitmessage.txt
 * .eslintrc
+* .stylelintrc
 
 ```
 $ yum install zsh
