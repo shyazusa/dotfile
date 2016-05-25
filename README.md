@@ -11,6 +11,8 @@ dotfile
 * .eslintrc
 * .stylelintrc
 
+## Use zsh
+
 ```
 $ yum install zsh
 $ zsh
@@ -23,6 +25,8 @@ $ ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
 $ done
 $ exec $SHELL
 ```
+
+## Use my dotfile
 
 ```
 $ cd ~
