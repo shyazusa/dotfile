@@ -2,14 +2,15 @@ dotfile
 ===
 
 * .bashrc
-* .vimrc
+* .editorconfig
+* .eslintrc
+* .gitmessage.txt
+* .stylelintrc
 * .vimperatorrc
+* .vimrc
 * .zpreztorc
 * .zprofile
 * .zshrc
-* .gitmessage.txt
-* .eslintrc
-* .stylelintrc
 
 ## Use zsh
 
