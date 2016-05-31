@@ -3,7 +3,8 @@
     "browser": true,
     "commonjs": true,
     "es6": true,
-    "node": true
+    "node": true,
+    "jquery": true
   },
   "rules": {
     "array-bracket-spacing": [2, "never"],
