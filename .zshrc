@@ -36,3 +36,5 @@ alias cl="clear"
 # cdとlsの省略
 setopt auto_cd
 function chpwd() { ls }
+
+function git(){hub "$@"}
