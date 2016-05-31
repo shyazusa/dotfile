@@ -23,7 +23,6 @@ setopt nolistbeep
 alias gls="gls --color"
 alias where="command -v"
 alias j="jobs -l"
-alias ls='LC_COLLATE=C /usr/local/bin/gls --group-directories-first'
 alias la="ls -a"
 alias lf="ls -F"
 alias ll="ls -l"
@@ -36,3 +35,5 @@ alias cl="clear"
 # cdとlsの省略
 setopt auto_cd
 function chpwd() { ls }
+
+function git(){hub "$@"}
