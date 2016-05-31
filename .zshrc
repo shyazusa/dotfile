@@ -19,8 +19,6 @@ export LANG=ja_JP.UTF-8
 setopt nolistbeep
 
 # 便利alias
-#alias ls="ls -G -w"
-alias gls="gls --color"
 alias where="command -v"
 alias j="jobs -l"
 alias la="ls -a"
