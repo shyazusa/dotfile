@@ -20,6 +20,7 @@
     "no-cond-assign": 2,
     "no-conslle": 2,
     "no-constant-condigion": 2,
+    "no-undef": 2,
     "no-dupe-args": 2,
     "no-dupe-keys": 2,
     "no-duplicate-case": 2,
