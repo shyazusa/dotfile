@@ -32,6 +32,7 @@ alias du="du -ah --max-depth=1"
 alias df="df -h"
 alias su="su -l"
 alias cl="clear"
+# alias git='hub'
 
 # cdとlsの省略
 setopt auto_cd
