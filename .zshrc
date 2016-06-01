@@ -12,6 +12,9 @@ fi
 
 # Customize to your needs...
 
+# path設定
+path=($HOME/bin(N-/) /usr/local/go/bin(N-/) $path)
+
 # 文字コード設定
 export LANG=ja_JP.UTF-8
 
