@@ -67,7 +67,7 @@
     # コメントにスペースを入れる
     "comment-whitespace-inside": "always",
     # インデントはスペース二つ
-    "indentation": 4,
+    "indentation": 2,
     # セレクタの重複を警告
     "no-duplicate-selectors": true,
     # 行末のスペースを許可しない
