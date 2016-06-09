@@ -38,4 +38,4 @@ alias cl="clear"
 setopt auto_cd
 function chpwd() { ls }
 
-function git(){hub "$@"}
+# function git(){hub "$@"}
