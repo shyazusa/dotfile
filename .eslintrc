@@ -47,7 +47,7 @@
     "semi": 2,
     "sort-vars": 1,
     "space-before-blocks": [2, "always"],
-    "space-before-function-paren": [2, "always"],
+    "space-before-function-paren": [2, "never"],
     "space-infix-ops": 2,
     "strict": 0,
     "use-isnan": 2,
