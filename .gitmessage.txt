@@ -1,4 +1,4 @@
-(#000) comment
+(#{issue}) comment
 
 # (fix #000) comment
 # と書くと関連するissueをclose出来る
