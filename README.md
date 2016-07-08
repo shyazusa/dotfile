@@ -44,7 +44,7 @@ $ cp ~/dotfile/prepare-commit-msg .git/hooks/
 ```
 
 ```
-$ git touch test
+$ touch test
 $ git add test
 $ git commit
 ```
