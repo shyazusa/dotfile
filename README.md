@@ -35,3 +35,16 @@ $ git clone https://github.com/shyazusa/dotfile.git
 $ cp dotfile/.* .
 $ git config --global commit.template ~/.gitmessage.txt
 ```
+
+## Use prepare-commit-msg
+
+```
+$ cp "your project path"
+$ cp ~/dotfile/prepare-commit-msg .git/hooks/
+```
+
+```
+$ git touch test
+$ git add test
+$ git commit
+```
