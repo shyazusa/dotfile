@@ -27,14 +27,19 @@ $ done
 $ exec $SHELL
 ```
 
-## Use my dotfile
+## Use my dotfiles
 
 ```
 $ cd ~
 $ git clone https://github.com/shyazusa/dotfile.git
 $ cp dotfile/.* .
-$ git config --global commit.template ~/.gitmessage.txt
+```
+
+## Use my gitfiles
+
+```
 $ git config --global core.commentchar ";"
+$ git config --global commit.template ~/dotfile/.gitmessage.txt
 ```
 
 ## Use prepare-commit-msg
@@ -43,6 +48,8 @@ $ git config --global core.commentchar ";"
 $ cp "your project path"
 $ cp ~/dotfile/prepare-commit-msg .git/hooks/
 ```
+
+### Test prepare-commit-msg
 
 ```
 $ touch test
