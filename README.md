@@ -34,6 +34,7 @@ $ cd ~
 $ git clone https://github.com/shyazusa/dotfile.git
 $ cp dotfile/.* .
 $ git config --global commit.template ~/.gitmessage.txt
+$ git config --global core.commentchar ";"
 ```
 
 ## Use prepare-commit-msg
