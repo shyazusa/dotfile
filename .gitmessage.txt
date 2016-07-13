@@ -19,7 +19,7 @@
 # 以下，commitの例文
 # 例文)
 # - Fix A in B (Bの箇所のAを修正)
-# - Fix for #000 (#000に対する修正)
+# - Fix for #{issue} (#{issue}に対する修正)
 # - Add A to B (AをBに追加)
 # - Remove A from B (AをBから除去)
 # - Remove unused A (不必要なAを除去)
