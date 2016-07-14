@@ -32,7 +32,7 @@ $ exec $SHELL
 ```
 $ cd ~
 $ git clone https://github.com/shyazusa/dotfile.git
-$ cp dotfile/.* .
+$ cp -r dotfile/.* .
 ```
 
 ## Use my gitfiles
@@ -40,6 +40,7 @@ $ cp dotfile/.* .
 ```
 $ git config --global core.commentchar ";"
 $ git config --global commit.template ~/dotfile/.gitmessage.txt
+$ git config --global init.templatedir '~/dotfile/.git_template'
 ```
 
 ## Use prepare-commit-msg
