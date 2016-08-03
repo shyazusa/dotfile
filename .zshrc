@@ -18,6 +18,9 @@ path=($HOME/bin(N-/) /usr/local/go/bin(N-/) $path)
 # 文字コード設定
 export LANG=ja_JP.UTF-8
 
+# lessコマンドの拡張
+export LESS="-sNiMR"
+
 # beepを消す
 setopt nolistbeep
 
