@@ -18,9 +18,6 @@ path=($HOME/bin(N-/) /usr/local/go/bin(N-/) $path)
 # 文字コード設定
 export LANG=ja_JP.UTF-8
 
-# lessコマンドの拡張
-export LESS="-sNiMR"
-
 # beepを消す
 setopt nolistbeep
 
@@ -35,6 +32,7 @@ alias du="du -ah --max-depth=1"
 alias df="df -h"
 alias su="su -l"
 alias cl="clear"
+alias less="less -sNiMR --tilde --max-forw-scroll=1 --window=1 --shift 1"
 # alias git='hub'
 
 # cdとlsの省略
