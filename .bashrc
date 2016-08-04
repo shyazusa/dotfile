@@ -39,3 +39,5 @@ alias du="du -ah --max-depth=1"
 alias df="df -h"
 alias su="su -l"
 alias cl="clear"
+alias less="less -sNiMR --tilde --max-forw-scroll=1 --window=1 --shift 1"
+
