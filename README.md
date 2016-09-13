@@ -53,6 +53,7 @@ $ cp ~/dotfile/prepare-commit-msg .git/hooks/
 ### Test prepare-commit-msg
 
 ```
+$ git checkout id/000
 $ touch test
 $ git add test
 $ git commit
