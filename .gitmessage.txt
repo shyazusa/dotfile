@@ -22,7 +22,7 @@
 ; - Fix for #{issue} (#{issue}に対する修正)
 ; - Add A to B (AをBに追加)
 ; - Remove A from B (AをBから除去)
-;- Remove unused A (不必要なAを除去)
+; - Remove unused A (不必要なAを除去)
 ; - Use A instead of B (AをBの代わりに用いる)
 ; - Change A to B (AをBに変更)
 ; - A in B out (AをBの変わりに導入)
