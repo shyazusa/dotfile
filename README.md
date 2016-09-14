@@ -46,7 +46,7 @@ $ git config --global init.templatedir '~/dotfile/.git_template'
 ## Use prepare-commit-msg
 
 ```
-$ cp "your project path"
+$ cd "your project path"
 $ cp ~/dotfile/prepare-commit-msg .git/hooks/
 ```
 
