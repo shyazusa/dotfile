@@ -17,10 +17,6 @@ set nobackup
 " ファイル上書き前のバックアップを作らない
 set nowritebackup
 
-" アンドゥをファイルとして保持
-set undodir=$HOME/.vim/undodir
-set undofile
-
 " 行番号表示
 set nu
 
