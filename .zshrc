@@ -33,6 +33,7 @@ alias df="df -h"
 alias su="su -l"
 alias cl="clear"
 alias less="less -sNiMR --tilde --max-forw-scroll=1 --window=1 --shift 1"
+alias his="history -E 1"
 # alias git='hub'
 
 # cdとlsの省略
