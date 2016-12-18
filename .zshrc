@@ -35,7 +35,7 @@ alias cl="clear"
 alias less="less -sNiMR --tilde --max-forw-scroll=1 --window=1 --shift 1"
 alias his="history -E 1"
 alias ergodox="make ergodox-ez-default && cp .build/ergodox_ez_default.hex ~"
-# alias git='hub'
+alias git='hub'
 
 # cdとlsの省略
 setopt auto_cd
