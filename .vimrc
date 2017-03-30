@@ -143,6 +143,9 @@ set list
 " 不可視文字の表示設定
 set listchars=tab:>-,trail:-,extends:»,precedes:«,nbsp:%
 
+" ペーストモードをデフォルトでオン
+set paste
+
 " キーバインド関係の設定
 " 括弧の自動補完
 inoremap { {}<LEFT>
