@@ -6,6 +6,7 @@ dotfile
 * .eslintrc
 * .gitmessage.txt
 * .stylelintrc
+* .tigrc
 * .vimperatorrc
 * .vimrc
 * .zpreztorc
