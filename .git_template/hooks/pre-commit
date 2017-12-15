@@ -8,7 +8,6 @@ else
 fi
 
 for FILE in `git diff-index --name-status $against -- | grep -E '^[AUM].*\.md$'| cut -c3-`; do
-  find $FILE | xargs sed -i "s/、/,/g"
-  find $FILE | xargs sed -i "s/。/./g"
+  find $FILE | xargs sed -i "s/、/，/g"
   git add $FILE
 done
