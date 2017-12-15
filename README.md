@@ -2,6 +2,7 @@ dotfile
 ===
 
 * .bashrc
+* .cvimrc
 * .editorconfig
 * .eslintrc
 * .gitmessage.txt
