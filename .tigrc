@@ -1,0 +1,38 @@
+set diff-context   = 5
+set vertical-split = yes
+set wrap-lines     = no
+
+
+set main-view = \
+  line-number:no,interval=5 \
+  id:yes,color \
+  date:default \
+  author:full \
+  commit-title:yes,graph,refs,overflow=no
+
+
+bind generic w scroll-page-up
+bind generic s scroll-page-down
+
+
+bind main g move-first-line
+bind main G move-last-line
+
+# copy commit_id (Mac)
+bind main c !@git pbcopy %(commit)
+
+
+bind diff ; view-next
+bind diff l scroll-right
+bind diff h scroll-left
+
+bind main    R !git rebase -i %(commit)
+bind diff    R !git rebase -i %(commit)
+bind generic L !git reflog
+
+# open commit at github
+bind generic o @hub browse -- commit/%(commit)
+bind main    B @hub browse -- commit/%(commit)
+bind diff    B @hub browse -- commit/%(commit)
+bind tree    B @hub browse -- tree/%(commit)/%(directory)
+bind blob    B @hub browse -- tree/%(commit)/%(file)
