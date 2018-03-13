@@ -34,7 +34,7 @@ alias su="su -l"
 alias cl="clear"
 alias less="less -sNiMR --tilde --max-forw-scroll=1 --window=1 --shift 1"
 alias his="history -E 1"
-alias ergodox="make ergodox-ez-shyazusa && cp .build/ergodox_ez_shyazusa.hex ~"
+alias ergodox="make ergodox_ez:shyazusa && cp .build/ergodox_ez_shyazusa.hex ~"
 alias git='hub'
 alias ssh='~/ssh-iterm-setting'
 
