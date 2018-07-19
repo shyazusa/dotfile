@@ -1,4 +1,4 @@
-// npm i -g textlint-rule-max-ten textlint-rule-max-kanji-continuous-len textlint-rule-spellcheck-tech-word textlint-rule-web-plus-db textlint-rule-no-mix-dearu-desumasu textlint-rule-no-doubled-joshi textlint-rule-no-double-negative-ja textlint-rule-no-hankaku-kana textlint-rule-ja-no-weak-phrase textlint-rule-ja-no-redundant-expression textlint-rule-ja-no-abusage textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet textlint-rule-no-dropping-the-ra textlint-rule-no-doubled-conjunctive-particle-ga textlint-rule-no-doubled-conjunction textlint-rule-ja-no-mixed-period textlint-rule-incremental-headers textlint-rule-hyogai-onkun textlint-rule-ja-hiragana-keishikimeishi textlint-rule-ja-hiragana-daimeishi textlint-rule-ja-hiragana-fukushi textlint-rule-ja-hiragana-hojodoushi textlint-rule-ja-unnatural-alphabet @textlint-ja/textlint-rule-no-insert-dropping-sa textlint-rule-prefer-tari-tari textlint-rule-general-novel-style-ja
+// npm i -g textlint-rule-max-ten textlint-rule-max-kanji-continuous-len textlint-rule-spellcheck-tech-word textlint-rule-web-plus-db textlint-rule-no-mix-dearu-desumasu textlint-rule-no-doubled-joshi textlint-rule-no-double-negative-ja textlint-rule-no-hankaku-kana textlint-rule-ja-no-weak-phrase textlint-rule-ja-no-redundant-expression textlint-rule-ja-no-abusage textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet textlint-rule-no-dropping-the-ra textlint-rule-no-doubled-conjunctive-particle-ga textlint-rule-no-doubled-conjunction textlint-rule-ja-no-mixed-period textlint-rule-incremental-headers textlint-rule-ja-hiragana-keishikimeishi textlint-rule-ja-hiragana-fukushi textlint-rule-ja-hiragana-hojodoushi textlint-rule-ja-unnatural-alphabet @textlint-ja/textlint-rule-no-insert-dropping-sa textlint-rule-prefer-tari-tari textlint-rule-general-novel-style-ja
 {
   "rules": {
     "max-ten": {
@@ -32,9 +32,7 @@
     "no-doubled-conjunction": true,
     "ja-no-mixed-period": true,
     "incremental-headers": true,
-    // "hyogai-onkun": true,
     "ja-hiragana-keishikimeishi": true,
-    // "ja-hiragana-daimeishi": true,
     "ja-hiragana-fukushi": true,
     "ja-hiragana-hojodoushi": true,
     "ja-unnatural-alphabet": true,
