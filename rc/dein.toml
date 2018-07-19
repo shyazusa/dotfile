@@ -1,38 +1,105 @@
-# 基本は github.com のレポジトリーを指定するだけ
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
-# git clone 後、実行すべきコマンドがある場合はこんな感じ
 [[plugins]]
-repo = 'Shougo/vimproc.vim'
-hook_post_update = '''
-  if dein#util#_is_windows()
-    let cmd = 'tools\\update-dll-mingw'
-  elseif dein#util#_is_cygwin()
-    let cmd = 'make -f make_cygwin.mak'
-  elseif executable('gmake')
-    let cmd = 'gmake'
-  else
-    let cmd = 'make'
-  endif
-  let g:dein#plugin.build = cmd
-'''
+repo = 'hail2u/vim-css3-syntax'
 
-# ブランチやタグを指定したいとき
 [[plugins]]
-repo = 'delphinus35/typescript-vim'
-rev  = 'colorize-template-strings'
+repo = 'kana/vim-filetype-haskell'
 
-# 特定の条件で読み込みたいとき
+[[plugins]]
+repo = 'mxw/vim-jsx'
+
+[[plugins]]
+repo = 'itchyny/vim-haskell-indent'
+
+[[plugins]]
+repo = 'udalov/kotlin-vim'
+
+[[plugins]]
+repo = 'shawncplus/phpcomplete.vim'
+
+[[plugins]]
+repo = 'jiangmiao/simple-javascript-indenter'
+
+[[plugins]]
+repo = 'thinca/vim-ft-diff_fold'
+
+[[plugins]]
+repo = 'thinca/vim-ft-help_fold'
+
+[[plugins]]
+repo = 'vim-jp/cpp-vim'
+
+[[plugins]]
+repo = 'cespare/vim-toml'
+
 [[plugins]]
 repo = 'elzr/vim-json'
-if   = '''! has('kaoriya')'''
 
-# 依存関係を指定したいとき
 [[plugins]]
-repo    = 'vim-airline/vim-airline'
-depends = ['vim-airline-themes']
+repo = 'vim-jp/autofmt'
 
-# 依存関係を指定したからと言って、自動でインストールはされない（ここは NeoBundle と違う）
 [[plugins]]
-repo = 'vim-airline/vim-airline-themes'
+repo = 'kana/vim-textobj-user'
+
+[[plugins]]
+repo = 'hynek/vim-python-pep8-indent'
+
+[[plugins]]
+repo = 'kana/vim-operator-user'
+
+[[plugins]]
+repo = 'rcmdnk/vim-markdown'
+
+[[plugins]]
+repo = 'jelera/vim-javascript-syntax'
+
+[[plugins]]
+repo = 'JesseKPhillips/d.vim'
+
+[[plugins]]
+repo = 'nsf/gocode'
+rtp = 'vim'
+
+[[plugins]]
+repo = 'vim-jp/vimdoc-ja'
+
+[[plugins]]
+repo = 'kballard/vim-fish'
+
+[[plugins]]
+repo = 'Shougo/neossh.vim'
+
+[[plugins]]
+repo = 'thinca/vim-themis'
+
+[[plugins]]
+repo = 'ujihisa/neco-look'
+
+[[plugins]]
+repo = 'nixprime/cpsm'
+build = 'sh -c "PY3=ON ./install.sh"'
+
+[[plugins]]
+repo = 'chemzqm/denite-git'
+
+[[plugins]]
+repo = 'leafgarland/typescript-vim'
+
+[[plugins]]
+repo = 'Shirk/vim-gas'
+
+[[plugins]]
+repo = 'chrisbra/vim-zsh'
+
+[[plugins]]
+repo = 'roxma/vim-hug-neovim-rpc'
+on_if = '!has("nvim")'
+
+[[plugins]]
+repo = 'https://github.com/roxma/nvim-yarp'
+
+[[plugins]]
+repo = 'uplus/deoplete-solargraph'
+

@@ -4,22 +4,22 @@
     "max-ten": {
       "max": 3
     },
-    "max-kanji-continuous-len: {
-      max: 5,
-      allow: ["倍精度浮動少数点数"]
+    "max-kanji-continuous-len": {
+      "max": 5,
+      "allow": ["倍精度浮動少数点数"]
     },
     "spellcheck-tech-word": true,
     // "web-plus-db": true,
     "no-mix-dearu-desumasu": {
-    "preferInHeader": "",
-    "preferInBody": "ですます",
-    "preferInList": "ですます",
-    "strict": false
+      "preferInHeader": "",
+      "preferInBody": "ですます",
+      "preferInList": "ですます",
+      "strict": false
     },
     "no-doubled-joshi": {
       "min_interval": 1,
       "strict": false,
-      "allow" []
+      "allow": []
     },
     "no-double-negative-ja": true,
     "no-hankaku-kana": true,
