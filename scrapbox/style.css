@@ -1,0 +1,269 @@
+@import 'https://scrapbox.io/api/code/scrasobox/フキダシになるタグ/style.css';
+@import 'https://scrapbox.io/api/code/scrasobox/フキダシになるタグ/tag_style.css';
+@import 'https://scrapbox.io/api/code/scrasobox/のびのびドロップダウン/style.css';
+@import 'https://scrapbox.io/api/code/scrasobox/ヘッダーメニューを固定する/style.css';
+@import 'https://scrapbox.io/api/code/scrasobox/ヘッダーメニューを固定する/mobile.css';
+@import 'https://scrapbox.io/api/code/scrasobox/チェックボックスになるタグ/style.css';
+@import 'https://scrapbox.io/api/code/scrasobox/チェックボックスになるタグ_2/style.css';
+@import 'https://scrapbox.io/api/code/scrasobox/バッヂになるタグ/style.css';
+.line [class='deco-\( deco-\)'] {
+  display: inline-block;
+  border-radius: 50%;
+  border: 0.05em solid #F40;
+  min-width: 1em;
+  padding: 0.1em;
+  vertical-align: text-bottom;
+  line-height: 1;
+  color: #F40;
+  font-weight: 600;
+}
+
+/* スリムなテロメア */
+
+.line .telomere .telomere-border, .line .telomere .telomere-border.unread {
+  transition: none;
+  box-sizing: content-box;
+  border-color: #FEFEFE;
+}
+
+.line .telomere .telomere-border:hover, .line .telomere .telomere-border.unread:hover {
+  box-sizing: border-box;
+  width: auto;
+  border-color: #8F9899;
+  background-color: transparent;
+}
+
+/* 新着以外のテロメアの色と太さ */
+
+.line .telomere .telomere-border {
+  background-color: #DEDEDE;
+  width: 2px;
+}
+
+/* 新着のテロメアの色と太さ */
+
+.line .telomere .telomere-border.unread {
+  background-color: #FCC;
+  width: 5px;
+}
+
+/* しおり記法 -- 栞箇所のマークやハイライトが不要な場合はこのブロックは消してね */
+
+@media screen {
+  .app:not(.presentation) .line .deco-\. {
+    background-color: #F5FAEA;
+  }
+  .app:not(.presentation) .line .deco-\.::after {
+    position: absolute;
+    top: 3px;
+    left: -1.4em;
+    content: '\f02e';
+    font: 1.7rem/1 'FontAwesome';
+    color: yellowgreen;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .app:not(.presentation) .line .deco-\.::after {
+    position: static;
+    padding-left: 0.3em;
+  }
+}
+
+/* 栞一覧を出すページメニューボタンのスタイル -- ここは必要 */
+
+a#Bookmarks.tool-btn:hover {
+  text-decoration: none;
+}
+
+a#Bookmarks.tool-btn::before {
+  position: absolute;
+  left: calc(46px / 3);
+  content: '\f097';
+  font: 20px/46px 'FontAwesome';
+}
+
+:
+/* WARNING:  */
+
+a#Bookmarks.tool-btn img {
+  opacity: 0;
+}
+
+/* 付箋記法のスタイル例 */
+
+.line:not(.cursor-line) .deco-\~ {
+  display: inline-block;
+  position: absolute;
+  top: -0.6em;
+  right: -6vw;
+  max-width: 40%;
+  padding: 0.3rem 1rem;
+  border-right: 1rem solid #04B2D9;
+  background-color: #F9F8F6;
+  transform: rotate(-0.8deg);
+  box-shadow: 4px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.presentation .line .deco-\~ {
+  position: static;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .line:not(.cursor-line) .deco-\~ {
+    position: static;
+    max-width: 100%;
+  }
+}
+
+@media print {
+  .line:not(.cursor-line) .deco-\~ {
+    right: 0;
+    border-bottom: 1px solid #CCC;
+    background-color: #F9F8F6;
+  }
+}
+
+/* 太字記法との組み合わせでスタイルを変える場合 */
+
+/* カラーパレット→ https://color.adobe.com/Softie-color-theme-2233237/ */
+
+.line .level-2 .deco-\~ {
+  border-right-color: #009175;
+}
+
+.line .level-3 .deco-\~ {
+  border-right-color: #EFBB33;
+}
+
+.line .level-4 .deco-\~ {
+  border-right-color: #F23E2E;
+}
+
+/* 付箋記法内で打消し線記法と下線記法を併用する場合 */
+
+.line .deco-\~.deco-- {
+  text-decoration: line-through;
+}
+
+.line .deco-\~.deco-_ {
+  text-decoration: underline;
+}
+
+.grid li.page-list-item a .pin {
+  background-color: transparent;
+  background-image: none
+}
+
+.grid li.page-list-item a .pin::after {
+  content: '\f08d';
+  font-family: 'FontAwesome';
+  font-size: 20px;
+  color: #A45AFF;
+  bottom: 0;
+  diplay: inline-block;
+  transform: rotate(35deg);
+}
+
+/* 箇条書きを控えめにする */
+
+.app .line .indent-mark .dot {
+  height: 0.2em;
+  width: 0.4em;
+  border-radius: 25%;
+  background-color: rgba(173, 173, 173, 0.55);
+}
+
+.app:not(.presentation) .line .indent-mark .dot {
+  top: auto;
+  bottom: 0;
+}
+
+/* 二重括弧による強調をマーカーっぽくする */
+
+.line strong:not([class]) {
+  background: linear-gradient(transparent 10%, #ABFF4F 25%, #ABFF4F 70%, transparent 90%);
+}
+
+.line:not(.cursor-line) a[href='./good_meal']:not(.icon) span, .line:not(.cursor-line) a[href='./good']:not(.icon) span, .line:not(.cursor-line) a[href='./bad']:not(.icon) span {
+  display: inline-block;
+  width: 0;
+  text-indent: -9999px;
+}
+
+.line:not(.cursor-line) a[href='./good_meal']:not(.icon)::after, .line:not(.cursor-line) a[href='./good']:not(.icon)::after, .line:not(.cursor-line) a[href='./bad']:not(.icon)::after {
+  display: inline-block;
+  min-width: 1.15em;
+  padding-left: 1px;
+  font: normal 110%/normal FontAwesome;
+  text-align: center;
+}
+
+.line:not(.cursor-line) a[href='./good_meal']:not(.icon)::after {
+  content: '\f0f5\f087\f069';
+  letter-spacing: 0.2em;
+}
+
+.line:not(.cursor-line) a[href='./good']:not(.icon)::after {
+  content: '\f087';
+}
+
+.line:not(.cursor-line) a[href='./bad']:not(.icon)::after {
+  content: '\f088';
+}
+
+/* タグアイコンの共通スタイル (1) */
+
+.line:not(.cursor-line) a[href='./!']:not(.icon) span, .line:not(.cursor-line) a[href='./%3F']:not(.icon) span, .line:not(.cursor-line) a[href='./*']:not(.icon) span, .line:not(.cursor-line) a[href='./%3E']:not(.icon) span, .line:not(.cursor-line) a[href='./%3C']:not(.icon) span, .line:not(.cursor-line) a[href='./-']:not(.icon) span, .line:not(.cursor-line) a[href='./e']:not(.icon) span {
+  display: inline-block;
+  width: 0;
+  text-indent: -9999px;
+}
+
+/* タグアイコンの共通スタイル (2) */
+
+.line:not(.cursor-line) a[href='./!']:not(.icon)::after, .line:not(.cursor-line) a[href='./%3F']:not(.icon)::after, .line:not(.cursor-line) a[href='./*']:not(.icon)::after, .line:not(.cursor-line) a[href='./%3E']:not(.icon)::after, .line:not(.cursor-line) a[href='./%3C']:not(.icon)::after, .line:not(.cursor-line) a[href='./-']:not(.icon)::after, .line:not(.cursor-line) a[href='./e']:not(.icon)::after {
+  display: inline-block;
+  min-width: 1.15em;
+  padding-left: 1px;
+  font: normal 110%/normal FontAwesome;
+  text-align: center;
+}
+
+/* ここから各アイコンの設定 */
+
+.line:not(.cursor-line) a[href='./!']:not(.icon)::after {
+  content: '\f06a';
+  color: #F6AE2D;
+}
+
+.line:not(.cursor-line) a[href='./%3F']:not(.icon)::after {
+  content: '\f059';
+  color: #758E4F;
+}
+
+.line:not(.cursor-line) a[href='./*']:not(.icon)::after {
+  content: '\f069';
+  color: #F26419;
+}
+
+.line:not(.cursor-line) a[href='./%3E']:not(.icon)::after {
+  content: '\f045';
+  color: lightgrey;
+}
+
+.line:not(.cursor-line) a[href='./%3C']:not(.icon)::after {
+  content: '\f274';
+  color: lightgrey;
+}
+
+.line:not(.cursor-line) a[href='./-']:not(.icon)::after {
+  content: '\f147';
+  color: lightgrey;
+}
+
+.line:not(.cursor-line) a[href='./e']:not(.icon)::after {
+  content: '\f10c';
+  color: #F26419;
+}
