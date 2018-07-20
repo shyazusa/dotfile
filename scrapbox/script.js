@@ -27,10 +27,10 @@ scrapbox.PopupMenu.addButton({
 
 scrapbox.PopupMenu.addButton({
   title: '付箋',
-  onClick: text => `[[~ ${text}]]`
+  onClick: text => `[~ ${text}]`
 });
 
 scrapbox.PopupMenu.addButton({
   title: 'しおり',
-  onClick: text => `[[. ${text}]]`
+  onClick: text => `[. ${text}]`
 });
