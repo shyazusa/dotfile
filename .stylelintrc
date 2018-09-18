@@ -25,13 +25,13 @@
     # ベンダープレフィックスを許可しない
     "value-no-vendor-prefix": true,
     # リストの値で、カンマの直前に改行を許可しない
-    "value-list-comma-newline-before": "always-multi-line",
+    "value-list-comma-newline-before": "never-multi-line",
     # リストの値で、カンマの直後に改行を必須にする
     "value-list-comma-newline-after": "always-multi-line",
     # リストの値で、カンマの直前にスペースを許可しない
     "value-list-comma-space-before": "never",
     # リストの値で、カンマの直後にスペースを許可しない
-    "value-list-comma-space-after": "always",
+    "value-list-comma-space-after": "always-single-line",
     # 不要なベンダープレフィックスのプロパティを許可しない
     "property-no-vendor-prefix": true,
     # エクスクラメーションマークの直前にスペースを入れることを許可しない
