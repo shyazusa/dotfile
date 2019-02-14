@@ -37,6 +37,7 @@ alias his="history -E 1"
 alias ergodox="make ergodox_ez:shyazusa && cp .build/ergodox_ez_shyazusa.hex ~"
 alias git='hub'
 alias ssh='~/ssh-iterm-setting'
+alias vim='nvim'
 alias ghci='stack ghci'
 alias ghc='stack ghc --'
 alias runghc='stack runghc --'
