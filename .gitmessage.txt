@@ -10,6 +10,9 @@
 ; #{issue}
 ; close #{issue}
 
+; 🎉  :tada: Initial commit.
+; 💄  :lipstick: デザイン変更 Updating the UI and style files.
+; 💬  :speech_balloon: テキスト変更 Updating text and literals.
 ; 🚧  :construction: 作業中
 ; 🐛  :bug: バグ修正
 ; 👍  :+1: 機能改善
