@@ -41,6 +41,7 @@ alias vim='nvim'
 alias ghci='stack ghci'
 alias ghc='stack ghc --'
 alias runghc='stack runghc --'
+alias bundler1='bundler _1.17.2_'
 
 # cdとlsの省略
 setopt auto_cd
