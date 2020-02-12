@@ -41,6 +41,7 @@ alias vim='nvim'
 alias ghci='stack ghci'
 alias ghc='stack ghc --'
 alias runghc='stack runghc --'
+alias bundle1='bundle _1.17.2_'
 alias bundler1='bundler _1.17.2_'
 
 # cdとlsの省略
