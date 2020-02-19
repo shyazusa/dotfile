@@ -1,3 +1,4 @@
+" https://gist.github.com/shyazusa/bc383e91edbf00a10e1d09a8a0c68d27
 " Settings
 let scrolltep = 30
 let fullpagescrollpercent = 100
@@ -95,6 +96,14 @@ copyTitleUrlForMilanote() -> {{
     Status.setMessage(ret, 2);
   });
 }}
+copyTitleUrlForScrapbox() -> {{
+  RUNTIME('getRootUrl', function(url) {
+    let ret = "[" + document.title + " " + url + "]";
+    Clipboard.copy(ret);
+    Status.setMessage(ret, 2);
+  });
+}}
 map yc :call copyTitleUrlForTextChat<CR>
 map ym :call copyTitleUrlForMarkDown<CR>
 map yl :call copyTitleUrlForMilanote<CR>
+map ys :call copyTitleUrlForScrapbox<CR>
