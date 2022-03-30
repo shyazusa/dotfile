@@ -32,9 +32,9 @@ $ exec $SHELL
 ## Use my dotfiles
 
 ```
-$ cd ~
+$ cd ~/Documents/GitHub
 $ git clone https://github.com/shyazusa/dotfile.git
-$ cp -r dotfile/.* .
+$ cp -rf ~/Documents/GitHub/dotfile/.* ~/.
 ```
 
 ## Use my gitfiles
