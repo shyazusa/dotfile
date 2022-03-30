@@ -2,7 +2,7 @@
 # Executes commands at the start of an interactive session.
 #
 # Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#   shy_azusa <shy.azusa@gmail.com>
 #
 
 # Source Prezto.
