@@ -47,8 +47,7 @@ alias bundler1='bundler _1.17.2_'
 # cdとlsの省略
 setopt auto_cd
 function chpwd() { ls }
-
-# function git(){hub "$@"}
+function git() { hub "$@" }
 
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$HOME/.rbenv/bin:$PATH"
