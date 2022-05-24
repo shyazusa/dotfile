@@ -36,7 +36,6 @@ alias less="less -sNiMR --tilde --max-forw-scroll=1 --window=1 --shift 1"
 alias his="history -E 1"
 alias ergodox="make ergodox_ez:shyazusa && cp .build/ergodox_ez_shyazusa.hex ~"
 alias git='hub'
-alias ssh='~/ssh-iterm-setting'
 alias vim='nvim'
 alias ghci='stack ghci'
 alias ghc='stack ghc --'
@@ -54,3 +53,4 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 eval "$(nodenv init -)"
 eval $(/opt/homebrew/bin/brew shellenv)
+eval "$(direnv hook zsh)"
