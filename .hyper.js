@@ -8,7 +8,7 @@ module.exports = {
         // or `'canary'` for less polished but more frequent updates
         updateChannel: 'stable',
         // default font size in pixels for all tabs
-        fontSize: 12,
+        fontSize: 16,
         // font family with optional fallbacks
         // fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
         fontFamily: 'FiraCode-Retina, JK-Gothic-L',
@@ -38,7 +38,7 @@ module.exports = {
         // hyper-background-image setting
         backgroundImage: {
           folder: '/Users/shohei.takei/Pictures/横壁紙/minimalist',
-          colorOpacity: 0.7
+          colorOpacity: 0.6
         },
         // terminal selection color
         selectionColor: 'rgba(248,28,229,0.3)',
