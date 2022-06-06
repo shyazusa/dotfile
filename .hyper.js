@@ -132,12 +132,12 @@ module.exports = {
     preserveCWD: true,
     // for advanced config flags please refer to https://hyper.is/#cfg
     // hyper-opacity setting
-    opacity: 0.6,
+    opacity: 0.5,
     // hyper-background-image setting
-    backgroundImage: {
-      folder: '/Users/shohei.takei/Pictures/横壁紙/minimalist',
-      colorOpacity: 0.6,
-    },
+    // backgroundImage: {
+    //   folder: '/Users/shohei.takei/Pictures/横壁紙/minimalist',
+    //   colorOpacity: 0.6,
+    // },
   },
   // a list of plugins to fetch and install from npm
   // format: [@org/]project[#version]
