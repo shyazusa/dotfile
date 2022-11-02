@@ -54,3 +54,5 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 eval "$(nodenv init -)"
 eval $(/opt/homebrew/bin/brew shellenv)
 eval "$(direnv hook zsh)"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
