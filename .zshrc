@@ -10,8 +10,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
-
 # path設定
 path=($HOME/bin(N-/) /usr/local/go/bin(N-/) $path)
 
@@ -50,9 +48,14 @@ function git() { hub "$@" }
 
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$HOME/.rbenv/bin:$PATH"
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/shohei.takei/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+eval "$(rbenv init -)"
 eval "$(nodenv init -)"
 eval $(/opt/homebrew/bin/brew shellenv)
 eval "$(direnv hook zsh)"
-export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
-
