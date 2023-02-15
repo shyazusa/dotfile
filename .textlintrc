@@ -1,20 +1,30 @@
-// npm i -g textlint-rule-max-ten textlint-rule-max-kanji-continuous-len textlint-rule-spellcheck-tech-word textlint-rule-web-plus-db textlint-rule-no-mix-dearu-desumasu textlint-rule-no-doubled-joshi textlint-rule-no-double-negative-ja textlint-rule-no-hankaku-kana textlint-rule-ja-no-weak-phrase textlint-rule-ja-no-redundant-expression textlint-rule-ja-no-abusage textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet textlint-rule-no-dropping-the-ra textlint-rule-no-doubled-conjunctive-particle-ga textlint-rule-no-doubled-conjunction textlint-rule-ja-no-mixed-period textlint-rule-incremental-headers textlint-rule-ja-hiragana-keishikimeishi textlint-rule-ja-hiragana-fukushi textlint-rule-ja-hiragana-hojodoushi textlint-rule-ja-unnatural-alphabet @textlint-ja/textlint-rule-no-insert-dropping-sa textlint-rule-prefer-tari-tari textlint-rule-general-novel-style-ja
+// npm i -g textlint textlint-rule-max-ten textlint-rule-max-kanji-continuous-len textlint-rule-spellcheck-tech-word textlint-rule-web-plus-db textlint-rule-no-mix-dearu-desumasu textlint-rule-no-doubled-joshi textlint-rule-no-double-negative-ja textlint-rule-no-hankaku-kana textlint-rule-ja-no-weak-phrase textlint-rule-ja-no-redundant-expression textlint-rule-ja-no-abusage textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet textlint-rule-no-dropping-the-ra textlint-rule-no-doubled-conjunctive-particle-ga textlint-rule-no-doubled-conjunction textlint-rule-ja-no-mixed-period textlint-rule-incremental-headers textlint-rule-ja-hiragana-keishikimeishi textlint-rule-ja-hiragana-fukushi textlint-rule-ja-hiragana-hojodoushi textlint-rule-ja-unnatural-alphabet @textlint-ja/textlint-rule-no-insert-dropping-sa textlint-rule-prefer-tari-tari textlint-rule-general-novel-style-ja textlint-rule-sentence-length textlint-rule-max-comma textlint-rule-preset-jtf-style textlint-rule-no-nfd @textlint-rule/textlint-rule-no-invalid-control-character textlint-rule-no-zero-width-spaces textlint-rule-no-exclamation-question-mark textlint-rule-ja-no-successive-word @textlint-rule/textlint-rule-no-unmatched-pair
 {
   "rules": {
+    "sentence-length": {
+      "max": 100
+    },
+    "max-comma": {
+      "max": 3
+    },
     "max-ten": {
       "max": 3
     },
     "max-kanji-continuous-len": {
-      "max": 5,
+      "max": 6,
       "allow": ["倍精度浮動少数点数"]
     },
+    "preset-jtf-style": false,
     "spellcheck-tech-word": true,
     // "web-plus-db": true,
     "no-mix-dearu-desumasu": {
       "preferInHeader": "",
       "preferInBody": "ですます",
-      "preferInList": "ですます",
-      "strict": false
+      "preferInList": "である",
+      "strict": true
+    },
+    "ja-no-mixed-period": {
+      "periodMark": "。"
     },
     "no-doubled-joshi": {
       "min_interval": 1,
@@ -30,7 +40,6 @@
     "no-dropping-the-ra": true,
     "no-doubled-conjunctive-particle-ga": true,
     "no-doubled-conjunction": true,
-    "ja-no-mixed-period": true,
     "incremental-headers": true,
     "ja-hiragana-keishikimeishi": true,
     "ja-hiragana-fukushi": true,
@@ -38,6 +47,12 @@
     "ja-unnatural-alphabet": true,
     "@textlint-ja/textlint-rule-no-insert-dropping-sa": true,
     "prefer-tari-tari": true,
-    "general-novel-style-ja": true
+    "general-novel-style-ja": false,
+    "no-nfd": true,
+    "@textlint-rule/no-invalid-control-character": true,
+    "no-zero-width-spaces": true,
+    "no-exclamation-question-mark": false,
+    "ja-no-successive-word": true,
+    "@textlint-rule/no-unmatched-pair": true,
   }
 }
