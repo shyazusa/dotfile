@@ -19,8 +19,8 @@
     "no-mix-dearu-desumasu": {
       "preferInHeader": "",
       "preferInBody": "ですます",
-      "preferInList": "ですます",
-      "strict": false
+      "preferInList": "である",
+      "strict": true
     },
     "no-doubled-joshi": {
       "min_interval": 1,
