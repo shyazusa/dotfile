@@ -14,7 +14,7 @@
       "max": 6,
       "allow": ["倍精度浮動少数点数"]
     },
-    "preset-jtf-style": true,
+    "preset-jtf-style": false,
     "spellcheck-tech-word": true,
     // "web-plus-db": true,
     "no-mix-dearu-desumasu": {
@@ -47,11 +47,11 @@
     "ja-unnatural-alphabet": true,
     "@textlint-ja/textlint-rule-no-insert-dropping-sa": true,
     "prefer-tari-tari": true,
-    "general-novel-style-ja": true,
+    "general-novel-style-ja": false,
     "no-nfd": true,
     "@textlint-rule/no-invalid-control-character": true,
     "no-zero-width-spaces": true,
-    "no-exclamation-question-mark": true,
+    "no-exclamation-question-mark": false,
     "ja-no-successive-word": true,
     "@textlint-rule/no-unmatched-pair": true,
   }
