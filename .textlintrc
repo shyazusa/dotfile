@@ -11,7 +11,7 @@
       "max": 3
     },
     "max-kanji-continuous-len": {
-      "max": 5,
+      "max": 6,
       "allow": ["倍精度浮動少数点数"]
     },
     "spellcheck-tech-word": true,
