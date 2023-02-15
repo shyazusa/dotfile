@@ -23,6 +23,9 @@
       "preferInList": "である",
       "strict": true
     },
+    "ja-no-mixed-period": {
+      "periodMark": "。"
+    },
     "no-doubled-joshi": {
       "min_interval": 1,
       "strict": false,
@@ -37,7 +40,6 @@
     "no-dropping-the-ra": true,
     "no-doubled-conjunctive-particle-ga": true,
     "no-doubled-conjunction": true,
-    "ja-no-mixed-period": true,
     "incremental-headers": true,
     "ja-hiragana-keishikimeishi": true,
     "ja-hiragana-fukushi": true,
