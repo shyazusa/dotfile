@@ -37,6 +37,23 @@ $ git clone https://github.com/shyazusa/dotfile.git
 $ cp -rf ~/Documents/GitHub/dotfile/.* ~/.
 ```
 
+### If Use neon-font.css in VS Code
+
+```
+$ cp -rf ~/Documents/GitHub/dotfile/neon-font.css ~/.
+```
+
+1. Install the `Custom CSS and JS Loader` extension
+2. Tell Custom CSS and JS Loader to use the CSS file included with adding an import line to your VS Code settings.json file:
+
+```
+  "vscode_custom_css.imports": [
+    "file:///Users/your_pc_user_name/neon-font.css"
+  ],
+```
+
+3. Run `Reload Custom CSS and JS` in VS Code
+
 ## Use my gitfiles
 
 ```
