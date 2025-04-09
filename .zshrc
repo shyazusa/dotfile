@@ -12,6 +12,12 @@ fi
 
 # path設定
 path=($HOME/bin(N-/) /usr/local/go/bin(N-/) $path)
+export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+export PATH="/opt/homebrew/opt/imagemagick@6/bin:$PATH"
+export PATH="/opt/homebrew/opt/gnu-getopt/bin:$PATH"
 
 # 文字コード設定
 export LANG=ja_JP.UTF-8
@@ -29,27 +35,14 @@ alias lt="ls -alTr"
 alias du="sudo du -d 1 -h"
 alias df="df -h"
 alias su="su -l"
-alias cl="clear"
 alias less="less -sNiMR --tilde --max-forw-scroll=1 --window=1 --shift 1"
 alias his="history -E 1"
-alias ergodox="make ergodox_ez:shyazusa && cp .build/ergodox_ez_shyazusa.hex ~"
 alias git='hub'
-alias vim='nvim'
-alias ghci='stack ghci'
-alias ghc='stack ghc --'
-alias runghc='stack runghc --'
-alias bundle1='bundle _1.17.2_'
-alias bundler1='bundler _1.17.2_'
 
 # cdとlsの省略
 setopt auto_cd
 function chpwd() { ls }
 function git() { hub "$@" }
-
-export PATH="$PATH:$HOME/.rvm/bin"
-export PATH="$HOME/.rbenv/bin:$PATH"
-export PATH="/opt/homebrew/bin:$PATH"
-export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/shohei.takei/.rd/bin:$PATH"
