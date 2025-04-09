@@ -12,6 +12,12 @@ fi
 
 # path設定
 path=($HOME/bin(N-/) /usr/local/go/bin(N-/) $path)
+export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+export PATH="/opt/homebrew/opt/imagemagick@6/bin:$PATH"
+export PATH="/opt/homebrew/opt/gnu-getopt/bin:$PATH"
 
 # 文字コード設定
 export LANG=ja_JP.UTF-8
@@ -45,11 +51,6 @@ alias bundler1='bundler _1.17.2_'
 setopt auto_cd
 function chpwd() { ls }
 function git() { hub "$@" }
-
-export PATH="$PATH:$HOME/.rvm/bin"
-export PATH="$HOME/.rbenv/bin:$PATH"
-export PATH="/opt/homebrew/bin:$PATH"
-export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/shohei.takei/.rd/bin:$PATH"
